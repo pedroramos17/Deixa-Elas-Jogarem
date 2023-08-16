@@ -20,7 +20,7 @@ public class Player {
         this.img = imgid;
     }
 
-    public Player(int img) {
+    public Player(String title, int img) {
         this.title = title;
         this.img = img;
     }

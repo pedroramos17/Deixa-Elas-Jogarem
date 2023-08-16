@@ -23,11 +23,11 @@ public class MainActivity extends AppCompatActivity {
         recyclerDataArrayList=new ArrayList<>();
 
         // added data to array list
-        recyclerDataArrayList.add(new Player(R.drawable.ic_launcher_background, "DSA"));
-        recyclerDataArrayList.add(new Player(R.drawable.ic_launcher_background, "JAVA"));
-        recyclerDataArrayList.add(new Player(R.drawable.ic_launcher_background, "C++"));
-        recyclerDataArrayList.add(new Player(R.drawable.ic_launcher_background, "Python"));
-        recyclerDataArrayList.add(new Player(R.drawable.ic_launcher_background, "Node Js"));
+        recyclerDataArrayList.add(new Player("DSA",R.drawable.ic_launcher_background));
+        recyclerDataArrayList.add(new Player("JAVA",R.drawable.ic_launcher_background));
+        recyclerDataArrayList.add(new Player("C++",R.drawable.ic_launcher_background));
+        recyclerDataArrayList.add(new Player("Python",R.drawable.ic_launcher_background));
+        recyclerDataArrayList.add(new Player("Node Js",R.drawable.ic_launcher_background));
 
         // added data from arraylist to adapter class.
         RecyclerViewAdapter adapter=new RecyclerViewAdapter(recyclerDataArrayList,this);
